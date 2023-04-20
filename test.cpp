@@ -1,37 +1,24 @@
-#include <iostream>
-#include <vector>
-#include <iomanip>
-#include <cstdlib> // srand(), rand()
-#include <ctime> // time()
-using std::cout; using std::vector;
-using std::endl; using std::setw;
-constexpr int ROWS = 4;
-constexpr int COLUMNS = 6;
-int main()
-{
-    // example for initialization - not used
-    vector<vector<float>> v1_2d {{20.0, 20.0},
-                                 {80.0, 80.0},
-                                 {20.0, 80.0},
-                                 {80.0, 20.0}};
-    // creates 2d_vector initialized with zeros
-    vector<vector<int>> v2_2d(ROWS, vector<int>(COLUMNS));
-    srand(time(NULL)); // inits rand()
-    for (vector<int> & item : v2_2d) {
-        for (int & i : item) {
-            i = rand() % 100;
-            cout << setw(2) << i << ' ';
-        }
-        cout << '\n';
-    }
-    cout << '\n';
-    // Multiply Each Element By 3
-    for (auto & item : v2_2d) {
-        for (auto & i : item) {
-            i *= 3;
-            cout << setw(3) << i << ' ';
-        }
-        cout << endl;
-    }
-    return EXIT_SUCCESS; // return 0
+#include <stdio.h>
+
+
+int main() {
+    char operator1 = 'A';
+    short operator2 = 0454;
+    int operator3 = 0x12345678;
+
+    /********************************************
+     'A' = 0100 0001; 0454(oct) = 0001 0010 1100
+      0000 0100 0001
+    - 0001 0010 1100
+    ----------------
+      1111 0001 0101 = -235 -> short
+    ********************************************/
+
+    short zwischenergebnis = operator1 - operator2;
+    int result = zwischenergebnis + operator3;
+    result = static_cast<long>(result);
+    printf("'A' - 0454 + 0x12345678 = %d", result);
+
+    return 0;
 }
+

@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users/hiero/CLionProjects/pg2/cmake-build-debug/
 
 build cmake_object_order_depends_target_pg2: phony || CMakeFiles/pg2.dir
 
-build CMakeFiles/pg2.dir/test.cpp.obj: CXX_COMPILER__pg2_Debug C$:/Users/hiero/CLionProjects/pg2/test.cpp || cmake_object_order_depends_target_pg2
-  DEP_FILE = CMakeFiles\pg2.dir\test.cpp.obj.d
+build CMakeFiles/pg2.dir/U3/U3.2.cpp.obj: CXX_COMPILER__pg2_Debug C$:/Users/hiero/CLionProjects/pg2/U3/U3.2.cpp || cmake_object_order_depends_target_pg2
+  DEP_FILE = CMakeFiles\pg2.dir\U3\U3.2.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\pg2.dir
-  OBJECT_FILE_DIR = CMakeFiles\pg2.dir
+  OBJECT_FILE_DIR = CMakeFiles\pg2.dir\U3
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/pg2.dir/test.cpp.obj: CXX_COMPILER__pg2_Debug C$:/Users/hiero/C
 #############################################
 # Link the executable pg2.exe
 
-build pg2.exe: CXX_EXECUTABLE_LINKER__pg2_Debug CMakeFiles/pg2.dir/test.cpp.obj
+build pg2.exe: CXX_EXECUTABLE_LINKER__pg2_Debug CMakeFiles/pg2.dir/U3/U3.2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\pg2.dir
