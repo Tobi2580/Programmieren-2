@@ -1,41 +1,44 @@
 #include <iostream>
-#include <chrono>
-#include <random>
-#include <fstream>
+#include <vector>
 #include <array>
 
 using namespace std;
 
+typedef struct {
+    char c;
+    int n;
+    double d;
+} Mix;
+
+//Define functions
+void extractInts(const vector<Mix> &mixVector, int arr[]);
+
 int main() {
+    //initializing variables
+    Mix mix1{'a', 1, 1.1}, mix2{'b', 2, 2.2}, mix3{'c', 3, 3.3};
+    vector<Mix> mixVector;
+    int *arr = new(nothrow) int[3];
 
-    array<array<int, 6>, 50> tan;
+    //push variables onto vector
+    mixVector.push_back(mix1);
+    mixVector.push_back(mix2);
+    mixVector.push_back(mix3);
 
-    int counter = 0;
-    // Iterating over rows
-    for (int row = 0; row < tan.size(); row++) {
+    //move int values from vector to intStdArray
+    extractInts(mixVector, arr);
+    array<int, 3> intStdArray = {arr[0], arr[1], arr[2]};
 
-        // Iterating over columns
-        for (int column = 0; column < tan.at(0).size(); column++) {
-
-            // Fill Array Element with TAN-Number
-            mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-            tan.at(row).at(column) = rng() % 100000000;
-
-            counter++;
-            cout << counter << ": " << tan.at(row).at(column) << '\n';
-        }
+    //print values
+    for (int num: intStdArray) {
+        cout << num << '\n';
     }
-
-    ofstream file("tan.txt");
-
-    for (int row = 0; row < tan.size(); row++) {
-        for (int column = 0; column < tan.at(0).size(); column++) {
-            file << tan.at(row).at(column) << '\n';
-        }
-    }
-    file.width(8);
-    file.fill('0');
-    file.close();
-
     return 0;
+}
+
+//functions
+void extractInts(const vector<Mix> &mixVector, int arr[]) {
+    //move int values from vector to array
+    for (int i = 0; i < mixVector.size(); ++i) {
+        arr[i] = mixVector.at(i).n;
+    }
 }
