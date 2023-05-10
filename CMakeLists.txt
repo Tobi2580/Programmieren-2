@@ -3,4 +3,4 @@ project(pg2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(pg2 U3/U3.2.cpp)
+add_executable(pg2 Kap2_GL_Teil6/Exceptions.cpp)
