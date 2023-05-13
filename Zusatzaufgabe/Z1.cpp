@@ -6,11 +6,12 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-template <typename T> void shiftLeft(T *);
+template <typename T> void shiftLeft(T & zahl);
 
 void dec2bin(int, char[]);
 
 void clearScreen();
+
 
 int main() {
     int choice;
@@ -80,10 +81,10 @@ int main() {
 
 void dec2bin(int nChoice, char sz[]) {
 
-    type var = 1;
-    var <<= sizeof(type) * 8 – 1;
+    //type var = 1;
+    //var <<= sizeof(type) * 8 – 1;
 
-    shiftLeft(&var);
+    //shiftLeft(&var);
 
     unsigned char uc, c = 1;
     c <<= sizeof(char) * 8 - 1;
@@ -171,4 +172,8 @@ void clearScreen() {
 #else
     system("clear");
 #endif // _WIN32
+}
+
+template <typename T> void shiftLeft(T & zahl){
+
 }
