@@ -1,15 +1,4 @@
 # ninja log v5
-3	808	7010953238594951	CMakeFiles/pg2.dir/main.cpp.obj	c74c6df26cc32539
-0	1224	7041148036726856	CMakeFiles/pg2.dir/Kap2_GL_Teil6/Sichtbarkeit_Gueltigkeitsbereich.cpp.obj	41f01de957e867d6
-1	194	7053380902500443	build.ninja	4072dc5ca45ef3d0
-790	891	7045881780938584	pg2.exe	196020efdadf49d0
-0	858	7010956830020328	CMakeFiles/pg2.dir/sum.cpp.obj	bb99cc7f701575a1
-4	1144	7041176994446541	CMakeFiles/pg2.dir/Kap2_GL_Teil6/Exceptions.cpp.obj	24382e7197fc6f51
-2	790	7045881779948311	CMakeFiles/pg2.dir/test.cpp.obj	af2b177d445f2cd8
-2	1282	7038091101736087	CMakeFiles/pg2.dir/U3/U3.2.cpp.obj	a0101608b287f4ad
-0	1115	7045871024903974	CMakeFiles/pg2.dir/Kap3_Strukturen_Klassen_Teil1/Aggregate.cpp.obj	8c5247c5d8a921c5
-2	230	7053380902500443	build.ninja	4072dc5ca45ef3d0
-1	1120	7053380915040389	CMakeFiles/pg2.dir/Zusatzaufgabe/Z1.cpp.obj	a5b8a2aeac60f11d
-1120	1381	7053380917609766	pg2.exe	77325c39b5aec044
-2	876	7053411572675245	CMakeFiles/pg2.dir/Zusatzaufgabe/Z1.cpp.obj	a5b8a2aeac60f11d
+2	230	7055010696426172	build.ninja	4072dc5ca45ef3d0
 876	1069	7053411574544237	pg2.exe	77325c39b5aec044
+2	876	7053411572675245	CMakeFiles/pg2.dir/Zusatzaufgabe/Z1.cpp.obj	a5b8a2aeac60f11d
