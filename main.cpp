@@ -1,17 +1,10 @@
-#include <iostream>
+#include "Dunnweber_U11.h"
 
+int main(){
 
-using namespace std;
+    tier Ameise{"Andi"};
 
-int main()
-{
-    int sum, a, b;
-    // Read summands
-    cout << "Enter two whole numbers: ";
-    cin >> a >> b;
-    // Calculate sum
-    sum = a + b;
-    // Show result on screen
-    cout << a << " + " << b << " = " << sum << '\n';
+    Ameise.beschreibungAusgeben();
+
     return 0;
 }

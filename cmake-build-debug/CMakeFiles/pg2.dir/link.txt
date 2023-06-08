@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\pg2.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\pg2.dir/objects.a @CMakeFiles\pg2.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\pg2.dir/objects.a -Wl,--no-whole-archive -o pg2.exe -Wl,--out-implib,libpg2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pg2.dir\linklibs.rsp
